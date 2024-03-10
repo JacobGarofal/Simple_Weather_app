@@ -1,0 +1,52 @@
+body{
+    background-image: url("../images/pexels-christian-buergi-13449845.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    font-family: var(--Rubik);
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 6.5vmin;
+    bottom: 20vmin !important;
+    
+}
+
+:root{
+    --Snigle-font: "Sniglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --Patua: "Patua One", cursive;
+    --Lobster: "Lobster", cursive;
+    --light-black: #2e2c2c;
+    --bggradient: linear-gradient(
+        to bottom,
+        #dd2476, #ff512f
+    );
+
+    --light-gray: rgba(255, 255, 255, 0.5);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.outer{
+    padding-top: 10vmin;
+}
+
+.form-control{
+    height: 5vmin !important;
+    text-align: center;
+    
+}
+
+.btn-primary{
+    width: 20vmin;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

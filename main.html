@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Main Weather Page</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style/main_style.css">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- Include Chart.js CDN link -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+<body>
+
+    <!--This is the main outer container which will house and display the api data retrieved from the fetch request-->
+    <div class="container px-5 ">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-5">
+                        <!--Display the retrieved city name-->
+                        <div class="city_style">
+                            <p>Your city</p>
+                            <div class="city_box"></div>
+                        </div>
+
+
+                        <!--Display the current date and time-->
+                        <p class="text-muted date_time"></p>
+
+                        <!--Display the temperature and provide an image representing the weather-->
+                        <div class="row">
+
+                            <!--This left side will house the image-->
+                            <div class="col-md-6">
+                                <div class="icon_image"></div>
+
+                            </div>
+
+                            <!--This right side will display the temperature currently-->
+                            <div class="col-md-6">
+                                <h2 class="current_temp"></h2>
+                            </div>
+                        </div>
+
+                        <!--This section will provide some info on if it is cloudy, raining etc-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 style="font-weight: bold;" class="weather_description"></h4>
+                            </div>
+                        </div>
+
+                        <!--This section will display the humidity and wind speed-->
+                        <div class="row">
+                            <div class="col-md-6 px-3">
+                                <p class="text-muted">Humidity</p>
+                                <p class="humidity px-4" style="font-size: 1.5rem;"></p>
+                            </div>
+                            <div class="col-md-6 px-3">
+                                <p class="text-muted">Windspeed</p>
+                                <p class="Windspeed px-4" style="font-size: 1.5rem;"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--This next seciton will display the temperature for the current day plotted on some form of graph 
+                        to represent where that temp lands when stacked against the temperatures for the rest of the week-->
+                    <div class="col-md-7">
+                        <div class="row">
+                            <!--The graph will span the entire width of this side of the screen-->
+                            <div class="col-md-12">
+                                <p class="text-muted">Temperature</p>
+                                
+                                <canvas id="myChart" class="container-fluid"></canvas>
+                            </div>
+                        </div>
+
+                        <!--This will allow the user to select the next few days and view their temps etc-->
+
+                        <div class="row card-container">
+                            <!--There will be 4 cards used-->
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--This will be the footer later in the program once the rest of the code is completed-->
+    <footer>
+
+    </footer>
+
+</body>
+
+<script src="scripts/main.js"></script>
+
+</html>

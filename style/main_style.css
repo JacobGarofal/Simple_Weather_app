@@ -1,0 +1,82 @@
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 0;
+    background-color: whitesmoke !important;
+}
+
+.container{
+    background-color: white !important;
+    margin-top: 10vmin;
+    height: 50vmin;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.col-md-5 .city_style{
+    display: flex !important;
+    justify-content: space-around !important;
+    position: relative;
+    right: 2rem;
+    padding-top: 2rem;
+}
+
+.city_box{
+    border: 1px solid darkgray;
+    text-align: left;
+    padding-top: 4px;
+    padding-left: 10px;
+    width: 200px;
+    position: relative;
+    right: 4rem;
+}
+
+.col-md-5 .text-muted{
+    padding-top: 3rem;
+    font-size: 1.5rem;
+}
+
+.weather_description{
+    font-weight: bold !important;
+}
+
+.humidity p{
+    color: black !important;
+    
+}
+
+.Windspeed p{
+    color: black !important;
+}
+
+.current_temp{
+    padding-top: 2rem;
+}
+
+.icon_image img{
+    height: 200px;
+    width: 200px;
+}
+
+.card{
+    position: relative;
+    top: 4vmin;
+    padding-left: 3px;
+    cursor: pointer;
+    height: auto;
+    max-width: 15rem;
+    padding-right: 1rem !important;
+    font-size: small;
+    
+}
+
+.card:hover{
+    outline: solid blue 3px;
+}
+
+.card.clicked{
+    background: lightblue;
+    color: white;
+    outline: none;
+}
